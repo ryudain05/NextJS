@@ -1,4 +1,4 @@
-import Navber from "../../componenets/NavNar";
+import Navber from "../../componenets/NavBar";
 
 export default function Home() {
   return (
