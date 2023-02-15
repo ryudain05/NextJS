@@ -7,11 +7,16 @@ export default function Navber() {
   console.log(router);
   return (
     <nav>
-      <Link className={router.pathname === "/" ? styles.active : '"'} href="/">
+      <Link
+        className={`${styles.link}
+            ${router.pathname === "/" ? styles.active : ""}`}
+        href="/"
+      >
         Home
       </Link>
       <Link
-        className={router.pathname === "/about" ? styles.active : '"'}
+        className={`${styles.link}
+            ${router.pathname === "/about" ? styles.active : ""}`}
         href="/about"
       >
         About
